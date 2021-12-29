@@ -1,7 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root{
     --background-color: #c2c2c2;
+    --default-font-size: 150%;
 }
 
 body{
     background-color: var(--background-color);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: var(--default-font-size);
+}
+
+#main{
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+#header{
+    font-size: 250%;
+}
+
+#navbarlinks{
+    list-style-type: none;
+    display: flex;
+    justify-items: space-between;
+    padding-left: -5%;
 }
